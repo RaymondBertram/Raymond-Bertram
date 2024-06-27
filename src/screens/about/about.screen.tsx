@@ -50,7 +50,7 @@ export default function About() {
           </div>
           <div className="flex flex-col items-center p-16">
             <div className="flex items-center justify-center">
-              <Image width={200} height={200} alt="me" src={logo} />
+              <Image placeholder="empty" width={200} height={200} alt="me" src={logo} />
             </div>
           </div>
         </div>
