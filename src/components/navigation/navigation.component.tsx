@@ -6,7 +6,7 @@ export default function Navigation() {
   const toggleMenu = () => setIsOpen(isOpen === 'hidden' ? '' : 'hidden');
 
   return (
-    <nav className="flex items-center sticky top-0 justify-between flex-wrap bg-[#000000] p-6 transition duration-700 hover:bg-violet-600  lg:hover:bg-[#181838] rounded">
+    <nav className="flex items-center top-0 justify-between flex-wrap bg-[#000000] p-6 transition duration-700 hover:bg-violet-600  lg:hover:bg-[#181838] rounded">
     <div className="flex items-center flex-shrink-0 text-white mr-6">
       <span className="font-semibold text-xl tracking-tight">Raymond Bertram</span>
     </div>
@@ -17,16 +17,16 @@ export default function Navigation() {
     </div>
     <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${isOpen}`}>
       <div className="lg:flex lg:flex-row lg:justify-end text-sm lg:flex-grow">
-        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4">
+        <a href="#about" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
           About
         </a>
-        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4">
+        <a href="#experience" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
           Experience
         </a>
-        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4">
+        <a href="#projects" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
           Projects
         </a>
-        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763]">
+        <a href="#contact" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763]" onClick={toggleMenu}>
           Contact
         </a>
       </div>
