@@ -1,4 +1,4 @@
-import Card from "@/components/card/card";
+import Card from "@/components/card/card.component";
 
 export default function Experience() {
   const card1 = {

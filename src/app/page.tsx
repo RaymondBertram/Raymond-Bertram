@@ -1,6 +1,7 @@
 import About from "@/screens/about/about.screen";
-import Experience from "@/screens/experience/experience";
+import Experience from "@/screens/experience/experience.screen";
 import Home from "@/screens/home/home.screen";
+import Projects from "@/screens/projects/projects.screen";
 
 export default function App() {
   return (
@@ -14,8 +15,11 @@ export default function App() {
       <section id="experience" className="section-experience flex flex-col h-screen py-2">
         <Experience/>
       </section>
-      <section id="projects" className="section-projects flex flex-col h-screen py-2">
-        <h1>Projects</h1>
+      <section id="projects" className="section-projects flex flex-col h-fit py-2">
+        <Projects/>
+      </section>
+      <section id="contact" className="section-contact flex flex-col h-screen py-2">
+        <h1>Contact</h1>
       </section>
     </main>
   );
