@@ -1,6 +1,5 @@
 "use client";
 import { useForm } from "react-hook-form";
-import { sendEmail } from "@/service/mail.service";
 import { IFormData } from "@/types";
 
 export default function Contact() {
