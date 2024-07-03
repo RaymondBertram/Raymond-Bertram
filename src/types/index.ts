@@ -22,3 +22,10 @@ export interface IImageCard {
   imgAlt: string;
   imgSrc: StaticImageData;
 }
+
+export interface IFormData {
+  fullName: string;
+  email: string;
+  subject: string;
+  message: string;
+}
