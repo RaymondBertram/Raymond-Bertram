@@ -26,6 +26,9 @@ export default function Navigation() {
         <a href="#projects" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
           Projects
         </a>
+        <a href="#testemonials" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
+        Testemonials
+        </a>
         <a href="#contact" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763]" onClick={toggleMenu}>
           Contact
         </a>

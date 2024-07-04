@@ -29,3 +29,10 @@ export interface IFormData {
   subject: string;
   message: string;
 }
+
+export interface ITestemonial {
+  name: string;
+  role: string;
+  image: string;
+  description: string;
+}
