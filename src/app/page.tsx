@@ -23,7 +23,7 @@ export default function App() {
       <section id="testemonials" className="flex flex-col h-fit items-center bg-gray-200 rounded-md py-36">
         <Testemonials/>
       </section>
-      <section id="contact" className="flex flex-col h-fit w-full py-2">
+      <section id="contact" className="flex flex-col h-fit w-full py-8">
         <Contact/>
       </section>
     </main>
