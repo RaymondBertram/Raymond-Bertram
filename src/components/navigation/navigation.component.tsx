@@ -6,7 +6,7 @@ export default function Navigation() {
   const toggleMenu = () => setIsOpen(isOpen === 'hidden' ? '' : 'hidden');
 
   return (
-    <nav className="flex items-center top-0 justify-between flex-wrap bg-[#000000] p-6 transition duration-700 hover:bg-violet-600  lg:hover:bg-[#181838] rounded">
+    <nav className="flex items-center top-0 justify-between flex-wrap bg-[#000000] p-6 transition duration-700 hover:bg-violet-600  lg:hover:bg-[#181838]">
     <div className="flex items-center flex-shrink-0 text-white mr-6">
       <span className="font-semibold text-xl tracking-tight">Raymond Bertram</span>
     </div>
