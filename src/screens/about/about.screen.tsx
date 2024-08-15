@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useIsVisible } from "@/hooks"; 
 
-import logo from "../../app/favicon.ico";
+import ray from "../../../public/images/ray.jpg";
 
 export default function About() {
   const ref = useRef(null);
@@ -11,10 +11,10 @@ export default function About() {
 
   return (
     <div ref={ref} className={`flex flex-col`}>
-      <div className="flex flex-col items-center justify-center ">
-        <h1 className="text-3xl p-8 mb-2.5 tracking-wide font-semibold overline">About Me</h1>
-        <div className="flex flex-col justify-center">
-          <div className=" bg-slate-100 rounded-xl shadow-xl p-4">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="text-3xl p-8 mb-2.5 tracking-wide font-semibold overline lg:mb-8">About Me</h1>
+        <div className="flex flex-col justify-center lg:grid lg:grid-cols-2 lg:items-center">
+          <div className=" bg-slate-100 rounded-xl shadow-xl p-4 lg:p-8">
             <>
               <p className="mb-4 text-justify leading-normal">
                 Greetings. I am Raymond Bertram, a 23-year-old pioneer in Full
@@ -50,7 +50,7 @@ export default function About() {
           </div>
           <div className="flex flex-col items-center p-16">
             <div className="flex items-center justify-center">
-              <Image placeholder="empty" width={200} height={200} alt="me" src={logo} />
+              <Image className="rounded-xl shadow-xl lg:w-full saturate-[0.6] hover:saturate-100 hover:scale-125 hover:-translate-y-6 hover:duration-300" placeholder="empty" width={200} height={200} alt="ray" src={ray} />
             </div>
           </div>
         </div>

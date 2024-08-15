@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "code": "url('/images/code.jpg')",
+        "argon": "linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e);"
       },
     },
   },
