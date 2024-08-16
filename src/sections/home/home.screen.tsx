@@ -1,8 +1,9 @@
 import { firaCode } from "@/app/fonts";
+import HoverButton from "@/components/hoverButton/hoverButton.component";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="">
       <p className={`${firaCode.className} py-2`}>Hi, my name is</p>
       <h1 className="text-4xl not-italic tracking-wider py-2">Raymond Bertram</h1>
       <h2 className="text-2xl tracking-wide py-2">Full Stack Software Engineer</h2>
@@ -11,7 +12,7 @@ export default function Home() {
         development. Currently I am focused on building innovative and
         sustainable technologies to enhance peoples lives.
       </p>
-      <button className="flex my-8 p-2 bg-black text-base text-[#FFFFFF]">Check Out my CV!</button>
+      <HoverButton screenId={"#mywork"} text="see my work" />
     </div>
   );
 }

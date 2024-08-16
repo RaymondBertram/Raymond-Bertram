@@ -9,11 +9,11 @@ export default function App() {
       <section id="home" className="section-home flex flex-col h-screen  p-[60px] py-2 justify-center items-center">
         <Home/>
       </section>
-      <section id="mywork" className="w-screen p-[60px] mx-6">
+      <section id="mywork" className="w-screen mx-6 px-5 lg:p-[60px] md:px-10">
         <MyWork/>
       </section>
-      <section id="testemonials" className="flex flex-col h-screen items-center rounded-md p-[60px]">
-        <Testemonials/>
+      <section id="testemonials" className="flex flex-col h-screen items-center rounded-md lg:p-[60px]">
+        {/* <Testemonials/> */}
       </section>
       <section id="contact" className="flex flex-col h-fit w-full p-[60px]">
         <Contact/>

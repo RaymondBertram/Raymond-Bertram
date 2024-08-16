@@ -16,3 +16,20 @@
   padding-bottom: 140px;
   display: grid;
 }
+
+@media screen and (max-width: 991px) {
+  .project {
+      grid-template:
+      "."
+      "."
+      "." / 1fr;
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project {
+      flex-direction: column-reverse;
+  }
+}
