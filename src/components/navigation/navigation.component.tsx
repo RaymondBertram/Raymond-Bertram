@@ -17,20 +17,14 @@ export default function Navigation() {
     </div>
     <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${isOpen}`}>
       <div className="lg:flex lg:flex-row lg:justify-end text-sm lg:flex-grow">
-        <a href="#about" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
-          About
-        </a>
-        <a href="#experience" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
-          Experience
-        </a>
-        <a href="#projects" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
-          Projects
+        <a href="#mywork" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
+          My Work
         </a>
         <a href="#testemonials" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
         Testemonials
         </a>
         <a href="#contact" className="block mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763]" onClick={toggleMenu}>
-          Contact
+          Contact Me
         </a>
       </div>
     </div>

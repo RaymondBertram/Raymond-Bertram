@@ -24,7 +24,7 @@ export default function Slider() {
   return (
       <div className="flex overflow-x-auto">
         {data.map((el, i) => (
-          <div key={el.name} className="flex-shrink-0 justify-center items-center w-5/6 rounded-md overflow-hidden mx-4 bg-[#ffffff60] dark:bg-[#0000008] lg:w-fit ">
+          <div key={el.name} className="flex-shrink-0 justify-center items-center w-5/6 rounded-md overflow-hidden mx-4 bg-[#ffffff60] dark:bg-[#0000008] lg:w-fit">
           <p className="text-base text-gray-600 leading-relaxed text-justify p-8">{el.description}</p>
           <div className="flex items-center justify-center p-2">
             <div className="rounded-full w-12 h-12 bg-black overflow-hidden p-2 max-w-md">
