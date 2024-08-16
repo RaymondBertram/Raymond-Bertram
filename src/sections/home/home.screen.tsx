@@ -11,7 +11,7 @@ export default function Home() {
         development. Currently I am focused on building innovative and
         sustainable technologies to enhance peoples lives.
       </p>
-      <button className="flex w-fit my-8 p-2 bg-black text-base text-[#FFFFFF] rounded">Check Out my CV!</button>
+      <button className="flex my-8 p-2 bg-black text-base text-[#FFFFFF]">Check Out my CV!</button>
     </div>
   );
 }
