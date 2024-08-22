@@ -15,7 +15,7 @@ export default function App() {
       <section id="about" className="flex flex-col justify-center h-screen px-5 pt-8 lg:p-[60px] md:px-10">
         <About/>
       </section>
-      <section id="contact" className="flex flex-col justify-center bg-[#C0C0C0] rounded-md h-fit w-full px-6 lg:px-[60px] md:px-10 lg:p-[60px]">
+      <section id="contact" className="flex flex-col h-[50vh] justify-center bg-[#E2E2E2] rounded-md w-full px-6 lg:px-[60px] md:px-10 lg:p-[60px]">
         <Contact/>
       </section>
     </main>
