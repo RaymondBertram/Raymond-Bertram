@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { firaCode } from "@/app/fonts";
 
 export default function Contact() {
 
@@ -17,7 +16,7 @@ export default function Contact() {
         </h1>
       </div>
       <div>
-        <p className={`${firaCode.className} leading-6`}>
+        <p className={`leading-6`}>
           If you need a modern and powerful website for your business, startup or
           yourself, I am available for work. You can email me directly at <span>
           <a href="mailto:contact@bertram-tech.de" className="underline text-purple-400"> contact@bertram-tech.de</a>

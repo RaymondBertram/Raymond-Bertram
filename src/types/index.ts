@@ -50,3 +50,10 @@ export interface IProject {
   screenId: string; 
   text: string 
 }
+
+export interface IProjectShowCase {
+  title: string;
+  description: string;
+  link: string;
+  img: StaticImageData;
+}
