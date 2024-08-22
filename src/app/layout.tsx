@@ -6,8 +6,14 @@ import Footer from "@/components/footer/footer.component";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Raymond Bertram",
-  description: "Portfolio of Raymond Bertram",
+  title: "Raymond Bertram - Full Stack Software Engineer",
+  description: "Explore the portfolio of Raymond Bertram, a Full Stack Software Engineer specializing in web and mobile app development using Next.js, React, and TypeScript.",
+  applicationName: "Raymond Bertram",
+  authors: [{ name: "Raymond Bertram", url: "https://bertram-tech.de" }],
+  generator: "Raymond Bertram",
+  keywords: ["Raymond Bertram", "Portfolio", "Full Stack Software Engineer", "Next.js", "React", "TypeScript", "Web Development", "Mobile App Development"],
+  publisher: "Raymond Bertram",
+  category: "Portfolio",
 };
 
 export default function RootLayout({
