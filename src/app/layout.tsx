@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { inter } from "./fonts";
 import Navigation from "@/components/navigation/navigation.component";
 import Footer from "@/components/footer/footer.component";
+
 import "./globals.css";
 
 export const metadata: Metadata = {

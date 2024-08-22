@@ -152,12 +152,10 @@ export default function DataPrivacy() {
       <p>
         Raymond Bertram
         <br />
-        Rosenweg 28
         <br />
         21244 Buchholz
       </p>
       <p>
-        Telefon: +49 178 8106668
         <br />
         E-Mail: contact@bertram-tech.de
       </p>
