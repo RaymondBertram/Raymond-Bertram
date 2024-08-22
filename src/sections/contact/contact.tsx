@@ -1,79 +1,29 @@
 "use client";
-import { useForm } from "react-hook-form";
-import { IFormData } from "@/types";
+import { motion } from "framer-motion";
+import { firaCode } from "@/app/fonts";
 
 export default function Contact() {
-  const { register, handleSubmit } = useForm<IFormData>();
 
   return (
-    <div className="flex flex-col">
-      <h1 className="flex flex-row text-3xl p-8 mb-2.5 tracking-wide font-semibold overline justify-center">
-        Get In Touch
-      </h1>
-
-      <form>
-        <div className="mb-5">
-          <label
-            htmlFor="name"
-            className="mb-3 block text-base font-medium text-black"
-          >
-            Full Name
-          </label>
-          <input
-            type="text"
-            placeholder="Full Name"
-            className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
-            {...register("fullName", { required: true })}
-          />
-        </div>
-        <div className="mb-5">
-          <label
-            htmlFor="email"
-            className="mb-3 block text-base font-medium text-black"
-          >
-            Email Address
-          </label>
-          <input
-            type="email"
-            placeholder="example@domain.com"
-            className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
-            {...register("email", { required: true })}
-          />
-        </div>
-        <div className="mb-5">
-          <label
-            htmlFor="email"
-            className="mb-3 block text-base font-medium text-black"
-          >
-            Email Address
-          </label>
-          <input
-            type="text"
-            placeholder="Subject"
-            className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
-            {...register("subject", { required: true })}
-          />
-        </div>
-        <div className="mb-5">
-          <label
-            htmlFor="message"
-            className="mb-3 block text-base font-medium text-black"
-          >
-            Message
-          </label>
-          <textarea
-            rows={4}
-            placeholder="Type your message"
-            className="w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
-            {...register("message", { required: true })}
-          ></textarea>
-        </div>
-        <div className="flex flex-row justify-center">
-          <button className="hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+    <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, ease: "easeOut" }}
+      className="flex flex-col py-10 lg:flex-row"
+    >
+      <div className="split-container lg:flex-col lg:justify-between lg:items-start lg:pl-8">
+        <h1 className="mt-0 pr-2 mb-5 font-normal leading-[140%] text-[37px] lg:text-4xl">
+          Want <span className="underline decoration-solid decoration-purple-400 lg:text-4xl">To Work?</span>
+        </h1>
+      </div>
+      <div>
+        <p className={`${firaCode.className} leading-6`}>
+          If you need a modern and powerful website for your business, startup or
+          yourself, I am available for work. You can email me directly at <span>
+          <a href="mailto:contact@bertram-tech.de" className="underline text-purple-400"> contact@bertram-tech.de</a>
+          </span>
+        </p>
+      </div>
+    </motion.div>
   );
 }

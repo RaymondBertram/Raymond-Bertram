@@ -11,7 +11,6 @@ export default function Impress() {
         <br />
         Full Stack Software Engineer in a consulting role
         <br />
-        Rosenweg 28
         <br />
         &acute;
         <br />
@@ -20,7 +19,6 @@ export default function Impress() {
 
       <h2>Kontakt</h2>
       <p>
-        Telefon: +49 (0) 178 8106668
         <br />
         E-Mail: contact@bertram-tech.de
       </p>
