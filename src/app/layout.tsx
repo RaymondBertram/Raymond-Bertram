@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import { inter } from "./fonts";
 import Navigation from "@/components/navigation/navigation.component";
 import Footer from "@/components/footer/footer.component";
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={inter.className}>
       <Navigation />   
         {children}
+        <Analytics/>
         <Footer />
       </body>
     </html>
