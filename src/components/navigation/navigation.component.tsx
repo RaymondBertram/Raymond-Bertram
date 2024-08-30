@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState<string>('hidden');
@@ -20,9 +21,9 @@ export default function Navigation() {
           <a href="/" className="block text-base mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
             Home
           </a>
-          <a href="/about" className="block text-base mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
+          <Link href="/about" className="block text-base mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
             About
-          </a>
+          </Link>
           <a href="/#mywork" className="block text-base mt-4 lg:inline-block lg:mt-0 text-[#ffffff] hover:text-[#FF0763] mr-4" onClick={toggleMenu}>
             My Work
           </a>
