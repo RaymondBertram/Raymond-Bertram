@@ -52,9 +52,9 @@ export default function MyWork() {
       transition={{ duration: 1, ease: "easeIn" }}
       className={`flex flex-col`}
     >
+      <Project {...project3} />
       <Project {...project1} />
       <Project {...project2} />
-      <Project {...project3} />
     </motion.div>
   );
 }
