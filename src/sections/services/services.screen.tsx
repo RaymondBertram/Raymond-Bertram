@@ -21,7 +21,7 @@ export default function Services() {
       transition={{ duration: 1, ease: "easeIn" }}
       className="py-10"
     >
-      <h1 className="mt-0 pr-2 mb-5 font-normal leading-[140%] text-[37px] lg:text-[56px]">Services</h1>
+      <h1 className="mt-0 pr-2 mb-5 font-normal leading-[140%] text-center text-[37px] lg:text-[56px] lg:mb-20">Services</h1>
       <div className="flex flex-col gap-y-4 lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:justify-items-center">
         <div className="relative">
           <Image src={webCode} alt="bg" className="rounded-xl shadow-xl brightness-50 min-h-[180px] lg:max-w-96 lg:min-h-64"/>
