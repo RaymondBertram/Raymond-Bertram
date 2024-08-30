@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useIsVisible } from "@/hooks";
 import { firaCode } from "@/app/fonts";
-import aboutPicture from "@/../public/images/ray.jpg"; 
+import aboutPicture from "@/../public/images/ray-picture.jpg"; 
 
 export default function About() {
   const ref = useRef(null);
