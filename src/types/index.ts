@@ -45,6 +45,7 @@ export interface IProject {
   description: string;
   img: StaticImageData;
   screenId: string;
+  link: string;
 };
  export interface IHoverButton { 
   screenId: string; 

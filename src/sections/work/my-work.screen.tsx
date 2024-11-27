@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { useIsVisible } from "@/hooks"; 
+import { useIsVisible } from "@/hooks";
 import { motion } from "framer-motion";
 
 import Project from "@/components/project/project.component";
@@ -18,27 +18,33 @@ export default function MyWork() {
       skill1: "React Native",
       skill2: "Agile Development",
       skill3: "TypeScript",
-      description: "The Lifebonus mobile app helps caregivers to improve their daily movements and mindfullness. I worked on this project as a full stack developer, building and improving features in the app from using TypeScript, AWS and React Native.",
+      description:
+        "The Lifebonus mobile app helps caregivers to improve their daily movements and mindfullness. I worked on this project as a full stack developer, building and improving features in the app from using TypeScript, AWS and React Native.",
       img: lifebonus,
       screenId: "/projects/lifebonus",
+      link: "https://www.lifebonus.health/",
     },
     project2: {
       title: "Health Reward Program",
       skill1: "React",
       skill2: "Node.js",
       skill3: "Concept",
-      description: "This is my bachelor thesis project, where I build a health reward program. I designed and built the frontend and backend of the app using React and Node.js.",
+      description:
+        "This is my bachelor thesis project, where I build a health reward program. I designed and built the frontend and backend of the app using React and Node.js.",
       img: laptop,
       screenId: "/projects/university",
+      link: "https://github.com/RaymondBertram/thesis",
     },
     project3: {
       title: "Advertisment Page",
       skill1: "HTML/CSS",
       skill2: "Webflow Development",
       skill3: "JavaScript",
-      description: "This is a advertisement page for a motor cross company in the netherlands. I built a responsive web page using Webflow and adding custom embedded code to show data in a bar-chart.",
+      description:
+        "This is a advertisement page for a motor cross company in the netherlands. I built a responsive web page using Webflow and adding custom embedded code to show data in a bar-chart.",
       img: motoInside,
       screenId: "/projects/motoinside",
+      link: "https://motoinside.app/advertentie",
     },
   };
 
@@ -50,7 +56,7 @@ export default function MyWork() {
       initial={{ opacity: 0, y: 20 }}
       animate={isVisible ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 1, ease: "easeIn" }}
-      className={`flex flex-col`}
+      className={`flex flex-col ge-container`}
     >
       <Project {...project3} />
       <Project {...project1} />

@@ -2,20 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .ge-container {
+    @apply container mx-auto;
+  }
+}
+
 :root {
   --background-color-1: 0, 0, 0;
   --background-color-2: 255, 255, 255;
 }
 
-
 body {
   background-color: --background-color-1;
 }
 
-
-  @media only screen and (min-width: 1024px) {
-    .split-container {
-      padding-right: 300px;
-    }
+@media only screen and (min-width: 1024px) {
+  .split-container {
+    padding-right: 300px;
   }
-  
+}
